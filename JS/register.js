@@ -31,9 +31,6 @@ form.addEventListener("submit", (event)=> {
     sessionStorage.setItem("info", JSON.stringify(formData));
     window.location.href = './homePageUser.html';
 
-    // Show welcome message
-    alert("Welcome " + formData.username);
-
     // Reset form
     form.reset();
 

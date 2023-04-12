@@ -40,7 +40,6 @@ function Decrement() {
             
             sessionStorage.setItem("correctanswer",JSON.stringify(arrCorrectA))
             sessionStorage.setItem("UNcorrectanswer",JSON.stringify(arrUnCorrectA))
-            alert('time up');
             document.getElementById("minutes").textContent="00";
             document.getElementById("seconds").textContent="00";
             window.location.assign("./result.html");
@@ -121,28 +120,28 @@ const ans4 = document.getElementById("ans4");
 
 function onChecked(){
     if(ans1.checked==true){
-        ans1L.style.backgroundColor = "#f5f3b4";
-        ans2L.style.backgroundColor = "#d1d1d1";
-        ans3L.style.backgroundColor = "#d1d1d1";
-        ans4L.style.backgroundColor = "#d1d1d1";
+        ans1L.style.borderColor = "black";
+        ans2L.style.borderColor = "#d1d1d1";
+        ans3L.style.borderColor = "#d1d1d1";
+        ans4L.style.borderColor = "#d1d1d1";
     }
     if(ans2.checked==true){
-        ans1L.style.backgroundColor = "#d1d1d1";
-        ans2L.style.backgroundColor = "#f5f3b4";
-        ans3L.style.backgroundColor = "#d1d1d1";
-        ans4L.style.backgroundColor = "#d1d1d1";
+        ans1L.style.borderColor = "#d1d1d1";
+        ans2L.style.borderColor = "black";
+        ans3L.style.borderColor = "#d1d1d1";
+        ans4L.style.borderColor = "#d1d1d1";
     }
     if(ans3.checked==true){
-        ans1L.style.backgroundColor = "#d1d1d1";
-        ans2L.style.backgroundColor = "#d1d1d1";
-        ans3L.style.backgroundColor = "#f5f3b4";
-        ans4L.style.backgroundColor = "#d1d1d1";
+        ans1L.style.borderColor = "#d1d1d1";
+        ans2L.style.borderColor = "#d1d1d1";
+        ans3L.style.borderColor = "black";
+        ans4L.style.borderColor = "#d1d1d1";
     }
     if(ans4.checked==true){
-        ans1L.style.backgroundColor = "#d1d1d1";
-        ans2L.style.backgroundColor = "#d1d1d1";
-        ans3L.style.backgroundColor = "#d1d1d1";
-        ans4L.style.backgroundColor = "#f5f3b4";
+        ans1L.style.borderColor = "#d1d1d1";
+        ans2L.style.borderColor = "#d1d1d1";
+        ans3L.style.borderColor = "#d1d1d1";
+        ans4L.style.borderColor = "black";
     }
 }
 
